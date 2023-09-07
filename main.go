@@ -5,6 +5,8 @@ import (
 	"log"
 	"microservices/handlers"
 	"net/http"
+	t "time"
+
 	// "io"
 	"os"
 )
@@ -18,7 +20,15 @@ func main() {
 	sm.Handle("/", hh)
 	sm.Handle("/goodbye", gb)
 
+	s := &http.Server{
+		Addr:    ":9090",
+        Handler: sm,
+		IdleTimeout:  120 * t.Second,
+		ReadTimeout:  1   *t.Second,
+        WriteTimeout: 1   *t.Second,
+	}
 
+	s.ListenAndServe()
 
 	// Listen for connections on all ip addresses (0.0.0.0)
 	// port 9090

@@ -15,16 +15,20 @@ import (
 )
 
 func main() {
+
+	// env.Parse()
+
 	// Create logger
 	l := log.New(os.Stderr, "product-api", log.LstdFlags)
 
 	// Create handlers for  routes
-	hh := handlers.NewHello(l)
+	// hh := handlers.NewHello(l)
 	gb := handlers.NewGoodbye(l)
+	ph := handlers.NewProducts(l)
 
 	// Create a ServeMux (multiplexer) to handle different route
 	sm := http.NewServeMux()
-	sm.Handle("/", hh)
+	sm.Handle("/", ph)
 	sm.Handle("/goodbye", gb)
 
 

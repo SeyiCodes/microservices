@@ -10,8 +10,7 @@ import (
 	"syscall"
 	// "fmt"
 	// "io"
-
-	"microservices/handlers"
+	"microservices/product-api/handlers"
 )
 
 func main() {

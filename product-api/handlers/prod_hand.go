@@ -3,9 +3,8 @@ package handlers
 import (
 	// "fmt"
 	"log"
-	"microservices/data"
+	"microservices/product-api/data"
 	"net/http"
-	"encoding/json"
 )
 
 
@@ -20,10 +19,8 @@ func NewProducts(l*log.Logger) *Products {
 
 func (p *Products) ServeHTTP(rw http.ResponseWriter, h *http.Request) {
 	lp := data.GetProducts()
-	d, err := json.Marshal(lp)
+	err := lp.ToJSON(rw)
 	if err!= nil {
         http.Error(rw, "Unable to marshall data", http.StatusInternalServerError)
     }
-
-	rw.Write(d)
 }

@@ -48,15 +48,15 @@ func main() {
     }()
 
 	// Set up a signal channel to gracefully handle termination signals
-	sigChan := make(chan os.Signal, 1)
+	c := make(chan os.Signal, 1)
 	// added a buffer of 1
 
 
-	signal.Notify(sigChan, os.Interrupt, syscall.SIGTERM)
+	signal.Notify(c, os.Interrupt, syscall.SIGTERM)
 	// Use syscall instead of os.Kill
 	
 
-	sig := <-sigChan
+	sig := <-c
 	l.Println("Recieved Terminate Signal, shutting down gracefully", sig)
 
 	

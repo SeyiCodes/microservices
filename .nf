@@ -22,15 +22,15 @@ oss[37m[0m[1myNMMMNyMMh[0m[31m[1msssssssssssssshmmmh[0m[31m[1mssssssso
 [43C[0m-------------------------[0m 
 [43C[0m[31m[1mOS[0m[0m:[0m Ubuntu 22.04.3 LTS on Windows 10 x86_64[0m 
 [43C[0m[31m[1mKernel[0m[0m:[0m 5.15.90.1-microsoft-standard-WSL2[0m 
-[43C[0m[31m[1mUptime[0m[0m:[0m 4 hours, 35 mins[0m 
-[43C[0m[31m[1mPackages[0m[0m:[0m 1109 (dpkg), 6 (snap)[0m 
+[43C[0m[31m[1mUptime[0m[0m:[0m 35 secs[0m 
+[43C[0m[31m[1mPackages[0m[0m:[0m 1113 (dpkg), 6 (snap)[0m 
 [43C[0m[31m[1mShell[0m[0m:[0m zsh 5.8.1[0m 
 [43C[0m[31m[1mTheme[0m[0m:[0m Adwaita [GTK3][0m 
 [43C[0m[31m[1mIcons[0m[0m:[0m Adwaita [GTK3][0m 
 [43C[0m[31m[1mTerminal[0m[0m:[0m vscode[0m 
 [43C[0m[31m[1mCPU[0m[0m:[0m Intel i5-8365U (8) @ 1.896GHz[0m 
-[43C[0m[31m[1mGPU[0m[0m:[0m bb95:00:00.0 Microsoft Corporation Device 008e[0m 
-[43C[0m[31m[1mMemory[0m[0m:[0m 2117MiB / 7849MiB[0m 
+[43C[0m[31m[1mGPU[0m[0m:[0m 8904:00:00.0 Microsoft Corporation Device 008e[0m 
+[43C[0m[31m[1mMemory[0m[0m:[0m 1689MiB / 7849MiB[0m 
 
 [43C[30m[40m   [31m[41m   [32m[42m   [33m[43m   [34m[44m   [35m[45m   [36m[46m   [37m[47m   [m
 [43C[38;5;8m[48;5;8m   [38;5;9m[48;5;9m   [38;5;10m[48;5;10m   [38;5;11m[48;5;11m   [38;5;12m[48;5;12m   [38;5;13m[48;5;13m   [38;5;14m[48;5;14m   [38;5;15m[48;5;15m   [m

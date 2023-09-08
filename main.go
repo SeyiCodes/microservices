@@ -20,6 +20,9 @@ func main() {
 	sm.Handle("/", hh)
 	sm.Handle("/goodbye", gb)
 
+
+	// Listen for connections on all ip addresses (0.0.0.0)
+	// port 9090
 	s := &http.Server{
 		Addr:    ":9090",
         Handler: sm,
@@ -30,10 +33,9 @@ func main() {
 
 	s.ListenAndServe()
 
-	// Listen for connections on all ip addresses (0.0.0.0)
-	// port 9090
-	log.Println("Starting Server")
-	http.ListenAndServe(":9090", sm)
+	
+	// log.Println("Starting Server")
+	// http.ListenAndServe(":9090", sm)
 	
 }
 
